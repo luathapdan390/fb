@@ -1,0 +1,5 @@
+{
+  "name": "Trình tạo ảnh bài đăng Facebook",
+  "description": "Một ứng dụng web để tạo hình ảnh trực quan cho các bài đăng trên Facebook từ nội dung văn bản. Người dùng nhập một bài đăng có cấu trúc, và ứng dụng sẽ tạo một hình ảnh riêng cho mỗi phần, sử dụng Gemini API.",
+  "requestFramePermissions": []
+}
