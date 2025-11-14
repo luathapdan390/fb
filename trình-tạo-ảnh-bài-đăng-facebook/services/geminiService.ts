@@ -1,12 +1,12 @@
 
 import { GoogleGenAI, Modality } from "@google/genai";
 
-const API_KEY = process.env.API_KEY;
-if (!API_KEY) {
-  throw new Error("API_KEY is not defined in environment variables");
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+if (!GEMINI_API_KEY) {
+  throw new Error("GEMINI_API_KEY is not defined in environment variables");
 }
 
-const ai = new GoogleGenAI({ apiKey: API_KEY });
+const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
 
 const generateBackgroundImage = async (text: string): Promise<string> => {
   const prompt = `Tạo một ảnh nền đẹp mắt và chuyên nghiệp, hoàn toàn không có bất kỳ chữ nào, phù hợp để sử dụng cho bài đăng trên mạng xã hội.
